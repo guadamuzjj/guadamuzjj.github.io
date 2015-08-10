@@ -7,8 +7,14 @@ html, body {
 }
 
 .custom-container {
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
+}
+
+.titles {
+	letter-spacing: 2px;
+	font-size: 42px;
+	color: #95a5a6;
 }
 
 header {
@@ -17,13 +23,10 @@ header {
 
 	.navbar {
 		margin: 0 auto;
-	}
-
-	nav {
 		top: 50px;
 	}
 
-	.navbar-default .navbar-collapse, .navbar-default {
+	.navbar-default .navbar-collapse {
 		border: none;
 		background-color: transparent;
 	}
@@ -46,34 +49,76 @@ header {
 		border-bottom: 1px solid #fff;
 	}
 
-	.main {
-		margin-top: 120px;
-	}
+	.general-description {
+		margin-top: 10%;
 
-	.hello {
-		padding: 15px;
-		color: #fff;
+		.hello {
+			padding: 15px;
+			color: #fff;
 
-		h1 {
-			font-size: 7vw;
+			h1 {
+				font-size: 78px;
+				text-shadow: 4px 4px 6px #888;
+			}
+
+			h3 {
+				font-size: 36px;
+			}
 		}
-
-		h3 {
-			font-size: 3vw;
-		}
-	}
-
-	.laptop {
 	}
 
 	.scroll-down {
 	    position: absolute;
-		margin-left:auto;
-		margin-right:auto;
 		left:0;
 		right:0;
-		bottom: 80px;
-		height: 62px;
-	  	animation-duration: 1.5s;
+	  	text-align: center;
+		bottom: 45px;
+		color : #fff;
+	  	-webkit-animation-duration: 2s;
+	  	-o-animation-duration: 2s;
+	  	animation-duration: 2s;
+	}
+}
+
+.main {
+	.me {
+		margin-top: 4%;
+	}
+
+	.me-container {
+		padding-top: 20px;
+
+		.photo {
+			box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+		}
+
+		.photo:hover {
+			box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.1);
+		}
+
+		.list-description {
+			tr {
+			    border-bottom: 1px solid #ecf0f1;
+
+				td {
+					font-size: 16px;
+					padding: 9px;
+					color: #777;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.custom-container {
+		width: 90%;
+	}
+
+	.general-description {
+		text-align: center;
 	}
 }
