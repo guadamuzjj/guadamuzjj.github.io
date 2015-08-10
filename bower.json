@@ -1,0 +1,24 @@
+{
+  "name": "guadamuzjj.github.io",
+  "version": "1.0.0",
+  "authors": [
+    "Jonathan Guadamuz <guadamuzjj@gmail.com>"
+  ],
+  "description": "GJ Site.",
+  "main": "index.html",
+  "keywords": [
+    "material"
+  ],
+  "license": "MIT",
+  "homepage": "guadamuzjj.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
