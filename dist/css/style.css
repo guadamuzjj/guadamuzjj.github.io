@@ -11,7 +11,15 @@ html, body {
 .titles {
   letter-spacing: 2px;
   font-size: 42px;
-  color: #95a5a6; }
+  color: #95a5a6;
+  text-align: center;
+  padding: 10px; }
+
+.shadow {
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 header {
   height: 100%;
@@ -35,15 +43,15 @@ header {
     color: #fff !important; }
   header .navbar-nav li a:hover {
     border-bottom: 1px solid #fff; }
-  header .general-description {
+  header .main-content {
     margin-top: 10%; }
-    header .general-description .hello {
+    header .main-content .hello {
       padding: 15px;
       color: #fff; }
-      header .general-description .hello h1 {
+      header .main-content .hello h1 {
         font-size: 78px;
         text-shadow: 4px 4px 6px #888; }
-      header .general-description .hello h3 {
+      header .main-content .hello h3 {
         font-size: 36px; }
   header .scroll-down {
     position: absolute;
@@ -52,20 +60,15 @@ header {
     text-align: center;
     bottom: 45px;
     color: #fff;
-    -webkit-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s; }
+    -webkit-animation: 2s scrolldown infinite;
+    -o-animation: 2s scrolldown infinite;
+    animation: 2s scrolldown infinite; }
 
 .main .me {
   margin-top: 4%; }
 
 .main .me-container {
   padding-top: 20px; }
-  .main .me-container .photo {
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
   .main .me-container .photo:hover {
     box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.1); }
   .main .me-container .list-description tr {
@@ -75,8 +78,47 @@ header {
       padding: 9px;
       color: #777; }
 
+.main .skills {
+  margin-top: 5%;
+  background-color: #fd5f54; }
+  .main .skills h1 {
+    text-align: center;
+    color: #fff; }
+  .main .skills .icon {
+    font-size: 36px;
+    line-height: 60px;
+    margin: 25px auto;
+    text-align: center;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.15);
+    color: #fd5f54;
+    display: block; }
+  .main .skills .skill {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+  .main .skills p {
+    color: #fff;
+    text-align: justify; }
+
+/*  Media Querys */
 @media screen and (max-width: 600px) {
   .custom-container {
     width: 90%; }
   .general-description {
     text-align: center; } }
+
+/* Animations */
+@-webkit-keyframes scrolldown {
+  100% {
+    transform: translateY(40px); } }
+
+@-moz-keyframes scrolldown {
+  100% {
+    transform: translateY(40px); } }
+
+@keyframes scrolldown {
+  100% {
+    transform: translateY(40px); } }
