@@ -12,13 +12,6 @@ h1, h2, h3, h4, h5 {
   width: 60%;
   margin: 0 auto; }
 
-.titles {
-  letter-spacing: 2px;
-  font-size: 42px;
-  color: #95a5a6;
-  text-align: center;
-  padding: 10px; }
-
 .shadow {
   box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s;
@@ -26,7 +19,6 @@ h1, h2, h3, h4, h5 {
   transition: all 0.3s; }
 
 header {
-  height: 100%;
   background-color: #1abc9c; }
   header .navbar {
     margin: 0 auto; }
@@ -34,31 +26,31 @@ header {
     top: 50px; }
   header .navbar-default .navbar-collapse, header .navbar-default {
     border: none;
-    background-color: transparent; }
+    background-color: #1abc9c; }
   header .navbar-brand {
     font-weight: 600;
     font-size: 30px;
     color: #34495e !important; }
   header .navbar-nav li a {
-    text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: 1px;
-    padding-bottom: 6px;
-    color: #fff !important; }
+    letter-spacing: 1px; }
   header .navbar-nav li a:hover {
-    border-bottom: 1px solid #fff; }
-  header .main-content {
-    margin-top: 15%; }
-    header .main-content .hello {
-      padding: 15px;
-      color: #fff; }
-      header .main-content .hello h1 {
-        font-size: 88px;
-        text-shadow: 4px 4px 6px #888; }
-      header .main-content .hello h3 {
-        font-size: 36px;
-        padding-top: 20px; }
-  header .scroll-down {
+    border-bottom: 1px solid #777; }
+
+section {
+  padding-top: 130px;
+  height: 100%;
+  background-color: #1abc9c; }
+  section .main-content .hello {
+    padding: 15px;
+    color: #fff; }
+    section .main-content .hello h1 {
+      font-size: 88px;
+      text-shadow: 4px 4px 6px #888; }
+    section .main-content .hello h3 {
+      font-size: 36px;
+      padding-top: 20px; }
+  section .scroll-down {
     position: absolute;
     left: 0;
     right: 0;
@@ -71,14 +63,20 @@ header {
 
 .main .me {
   padding: 5%; }
+  .main .me h1 {
+    font-size: 42px;
+    color: #95a5a6;
+    text-align: center;
+    padding: 10px; }
 
 .main .me-container {
   padding-top: 20px; }
   .main .me-container .photo {
-    margin: 0 auto; }
+    margin-bottom: 20px; }
   .main .me-container .photo:hover {
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1); }
   .main .me-container .list-description {
+    padding-top: 30px;
     margin: 0 auto; }
     .main .me-container .list-description tr {
       border-bottom: 1px solid #ecf0f1; }
@@ -93,7 +91,7 @@ header {
   .main .skills h1 {
     text-align: center;
     color: #fff;
-    margin-bottom: 10px; }
+    padding-bottom: 50px; }
   .main .skills .icon {
     font-size: 36px;
     line-height: 60px;
@@ -104,12 +102,12 @@ header {
     border-radius: 50%;
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.15);
     color: #fd5f54;
-    display: block;
-    margin-top: 10px; }
+    display: block; }
   .main .skills h3 {
     text-align: center;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 30px; }
 
 .main .sayhello {
   padding: 10%;
@@ -121,9 +119,6 @@ header {
     padding-top: 15px;
     font-size: 18px; }
   .main .sayhello .mail {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: #777;
     font-size: 18px; }
   .main .sayhello .list-social {
@@ -149,10 +144,7 @@ footer {
   .custom-container {
     width: 90%; }
   .main-content, .sayhello {
-    text-align: center; }
-  .list-social {
-    margin: 0 auto;
-    margin-top: 10px; } }
+    text-align: center; } }
 
 /* Animations */
 @-webkit-keyframes scrolldown {
