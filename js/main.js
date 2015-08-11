@@ -5,12 +5,4 @@ $(document).ready(function() {
 	    $('html, body').animate({
 	        scrollTop: $(target).offset().top}, 'slow');
 	 });
-
-	/*$(window).bind('scroll', function () {
-	    if ($(window).scrollTop() > 30) {
-	        $('nav').addClass('navbar-fixed-top navbar-fixed');
-	    } else {
-	        $('nav').removeClass('navbar-fixed-top navbar-fixed');
-	    }
-	});*/
 });

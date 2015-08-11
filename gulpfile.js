@@ -5,11 +5,11 @@ var browserSync = require('browser-sync');
 gulp.task('sass', function () {
     gulp.src('scss/style.scss')
         .pipe(sass({includePaths: ['scss']}))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('browser-sync', function() {
-    browserSync.init(["*.html", "dist/css/*.css", "dist/js/*.js"], {
+    browserSync.init(["*.html", "css/*.css", "js/*.js"], {
         server: {
             baseDir: "./"
         }
