@@ -1,0 +1,12 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.google.ar.core.codelabs.streetscapegeometry",
+        "sha256_cert_fingerprints": [
+          "13:77:4E:5A:99:81:8F:1C:56:EB:89:B9:DC:59:02:A6:D7:AA:B9:78:E2:D3:E3:A5:2C:07:07:26:CD:11:4E:95"
+        ]
+      }
+    }
+  ]
